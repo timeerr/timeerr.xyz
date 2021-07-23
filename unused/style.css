@@ -1,0 +1,99 @@
+* {background-color: #3b4252;}
+
+body {
+    background-color: #3b4252;
+    font-family: Roboto;color:white;
+    }
+
+nav {
+    padding: 8px;
+}
+
+h1 {text-align: center;
+    font-size: 50px;
+} 
+
+p {text-align: center;
+} 
+
+
+a {color:lightblue;
+    text-align: center;
+    text-decoration: none; 
+    font-weight:500;
+    margin-left: 10px;
+}
+a:hover {
+    color: #4b9258;
+}
+
+
+/* Table*/
+table {
+    height: 40%;
+    margin: 20px auto;
+    width: 50%;
+}
+
+thead th {
+    background-color: lightblue;
+    color: #3b4252;
+    font-size: 20px; 
+    font-weight: 500;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+tr {
+    border-bottom: 1px solid white;
+    margin-bottom: 5px;
+}
+
+tfoot td{
+    background: #84734d;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+th,td {
+    padding: 20px;
+    border:  1px solid white;
+    font-size: large;
+}
+
+section {
+    /*border: 0.5px solid white;*/
+}
+
+input {
+    background: white;
+    color: #3b4252;
+    border: 2px #3b4252;
+    border-radius: 5px;
+    width: auto;
+    height: 30px;
+    font-size: 16px;
+}
+
+label {
+    font-weight: 400;
+}
+
+/*Divs*/
+div {text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+} 
+
+
+/*Classes*/
+.title {
+    text-shadow: 2px 2px 3px #3c435283 ;
+    font-size: 50px;
+} 

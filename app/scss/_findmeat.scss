@@ -1,0 +1,33 @@
+
+.findmeat {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    max-width: 30%;
+    margin-top: 11rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        p {
+            max-width: 6rem;
+            opacity: 0;
+            transition: opacity 300ms ease-in-out;
+        }
+        img{
+            width: clamp(2rem, 4vw, 4rem);
+            transition: transform $scalingSpeed ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.1) ;
+        }
+
+        &:hover {
+            p{
+                opacity:1;
+            }
+        }
+    }
+}

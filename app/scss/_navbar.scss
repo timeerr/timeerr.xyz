@@ -1,0 +1,53 @@
+.navbar {
+    background-color: $mediumNord;
+    height: 5.625rem;
+    padding: 46px;
+
+}
+
+.header {
+    &__logo {
+        img {
+            width: 3rem;
+            transition: transform $scalingSpeed ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__links {
+        font-size: clamp(0.8rem, 3vw, 1.375rem);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        a{
+            color: white;
+            position: relative;
+            font-weight: 300;
+            text-align: center;
+            transition: color 50ms ease-in-out;
+            &:hover {
+                color: $lightGreen;
+                &::before{
+                    opacity: 1;
+                    //Esto es lo que hace que la linea aparezca
+                }
+            }
+        }
+        a:not(:last-child) {
+            margin-right: 30px;
+        }
+        a::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -30px;
+            display: block;
+            height: 2.5px;
+            background-color: $lightGreen; 
+            opacity: 0;
+            transition: opacity 100ms ease-in-out;
+        }
+    }
+}
