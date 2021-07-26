@@ -2,22 +2,21 @@
 .findmeat {
     display: flex;
     align-items: top;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 30%;
-    margin-top: 11rem;
+    margin-top: 14rem;
     margin-left: auto;
     margin-right: auto;
 
     .item {
-        display: flex;
-        flex-direction: column;
         p {
-            max-width: 6rem;
+            width: 6rem;
+            font-size: clamp(0.5rem, 3vw, 1rem);
             opacity: 0;
             transition: opacity 300ms ease-in-out;
         }
         img{
-            width: clamp(2rem, 4vw, 4rem);
+            width: clamp(1.5rem, 4vw, 4rem);
             transition: transform $scalingSpeed ease-in-out;
         }
         img:hover {
